@@ -10,7 +10,7 @@
 ## 🛠️ Built With
 
 - **HTML5** - Structure
-- **CSS3** - Styling (Grid, buttons, colors)
+- **CSS** - Styling (Grid, buttons, colors)
 - **JavaScript** - Functionality
 
 ## 📦 How to Run
