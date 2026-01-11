@@ -1,11 +1,4 @@
-const todoList = [
-  {
-    name: 'birthday',
-    dueDate: '02-14-2026'},
-  {
-    name: 'wash dishes',
-    dueDate: '01-10-2026'}
-  ];
+const todoList = JSON.parse(localStorage.getItem("todoList")) || [];
 renderTodoList();
 
 function renderTodoList(){
@@ -13,8 +6,7 @@ let todoListHTML = '';
 
 for(let i=0; i<todoList.length; i++){
   const todoObject = todoList[i];
-  const {name,dueDate} = todoObject //const name = todoObject.name;
- // const dueDate = todoObject.dueDate;
+  const {name,dueDate} = todoObject //const name = todoObject.name; // const dueDate = todoObject.dueDate;
 
   const html = `
   <div>${name}</div>
@@ -38,6 +30,8 @@ function addTodo() {
     name,   //name: name,
     dueDate   //dueDate: dueDate
   });
+  let todoListStr = JSON.stringify(todoList)
+  localStorage.setItem("todoList", todoListStr);
   
  // console.log(todoList);
 
