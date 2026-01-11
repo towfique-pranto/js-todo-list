@@ -1,4 +1,4 @@
-# Project Name (Todo List App)
+# Todo List App
 
 "A simple browser-based task manager that saves data to local storage."
 
