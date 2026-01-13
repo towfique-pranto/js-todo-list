@@ -13,20 +13,6 @@ todoList.forEach((todoObject, index)=>{
     class="delete-button">Delete</button>`;
   todoListHTML += html;
 });
-/*
-for(let i=0; i<todoList.length; i++){
-  const todoObject = todoList[i];
-  const {name,dueDate} = todoObject //const name = todoObject.name; // const dueDate = todoObject.dueDate;
-
-  const html = `
-  <div>${name}</div>
-  <div>${dueDate}</div>
-  <button onclick="todoList.splice(${i}, 1); renderTodoList();"
-    class="delete-button">Delete</button>`;
-  todoListHTML += html;
-}*/
-//console.log(todoListHTML);
-
 document.querySelector('.js-todo-list').innerHTML = todoListHTML;
 }
 function addTodo() {
